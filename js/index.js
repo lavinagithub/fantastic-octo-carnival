@@ -1,3 +1,8 @@
+start = document.querySelector("#start");
+start.addEventListener("click", function (e) {
+  document.querySelector("#quizBlock").style.display = "block";
+  start.style.display ="none";
+});
 // quizArray QUESTIONS & ANSWERS
 // q = QUESTION, o = OPTIONS, a = CORRECT ANSWER
 // Basic ideas from https://code-boxx.com/simple-javascript-quiz/
@@ -18,6 +23,7 @@ var quizArray = [
     a: 1,
   },
 ];
+
 
 // function to Display the quiz questions and answers from the object
 const displayQuiz = () => {

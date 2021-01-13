@@ -15,20 +15,40 @@
       crossorigin="anonymous"
     />
     <title>Quiz</title>
+    <script src="./js/index.js" async></script>
   </head>
   <body>
-    <div class="container m-5">
+    <div class="container m-5" id="start">
       <div class="card" style="width: 18rem">
         <div class="card-body">
-          <h5 class="card-title">Click the Button the enter quiz</h5>
+          <h5 class="card-title">Test your knowledge</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Some quick description about the quiz .
           </p>
-          <a href="quiz.html" class="btn btn-primary">Start Quiz</a>
+          <a class="btn btn-primary">Start</a>
         </div>
       </div>
     </div>
+
+    <!-- (B) QUIZ CONTAINER -->
+    <div class="container" id="quizBlock" style="display: none">
+      <div class="mb-5">
+        <h2>Test your knowledge</h2>
+        - Time remaining <span id="time">01:00</span>
+      </div>
+      <div id="quizWrap"></div>
+
+      <div>
+        <button type="button" class="btn btn-primary" id="btnSubmit">
+          Submit Quiz
+        </button>
+        <button type="button" class="btn btn-primary" id="btnReset">
+          Reset Quiz
+        </button>
+        <span id="score"></span>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
