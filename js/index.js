@@ -14,7 +14,7 @@ var quizArray = [
   },
   {
     q: "What is the capital of Australia",
-    o: ["Sydney", "Canberra", "Melbourne", "Pacific Ocean"],
+    o: ["Sydney", "Canberra", "Melbourne", "Perth"],
     a: 1,
   },
 ];
